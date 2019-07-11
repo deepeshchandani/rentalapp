@@ -1,0 +1,19 @@
+<div class="container" >
+  <form class="form-signin" (ngSubmit)="signup(signupForm)" #signup="ngForm">
+    <h1 class="h3 mb-3 font-weight-normal">Please sign up</h1>
+    <label for="inputEmail" class="sr-only">Email address</label>
+    <input name="email" ngModel type="email" id="inputEmail" class="form-control" placeholder="Email address" required autofocus>
+    <br><br>
+    <label for="inputPassword" class="sr-only">Password</label>
+    <input name="password" ngModel type="password" id="inputPassword" class="form-control" placeholder="Password" required>
+    <br><br>
+    <label for="inputdob" class="sr-only">DOB</label>
+    <input name="dob" ngModel type="date" id="inputdob" class="form-control" placeholder="DOB" required>
+    <br><br>
+    <label for="inputmobile" class="sr-only">mobile</label>
+    <input name="mobile" ngModel type="text" id="inputmobile" class="form-control" placeholder="mobile" required>
+    
+    <button [disabled]="!signupForm.valid" class="btn btn-lg btn-primary btn-block" type="submit">Sign in</button>
+    <p class="mt-5 mb-3 text-muted">&copy; 2017-2019</p>
+  </form>
+</div>
